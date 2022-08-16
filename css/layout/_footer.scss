@@ -34,9 +34,21 @@ footer {
     
 } 
 .footer__socials {
-    display: none;
+    display: inline-flex;
     text-align: center;
     justify-content: center;
+    .facebook {
+        display:none;
+    }
+    .linkedin {
+        display:none;
+    }
+    .twitter{
+        display:none;
+    }
+    .instagram {
+        display:none;
+    }
 }
 .footer__socials a{
     color: #EEE;
