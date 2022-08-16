@@ -1,0 +1,38 @@
+@media screen and (min-width: 780px) {
+    .burger {
+        display: none;
+    }
+}
+
+.burger {
+    background: none;
+    border: none;
+    margin-left: 1.5rem;
+    width:35px;
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.burger .bar {
+    display: block;
+    width: 22px;
+    height: 3px;
+    background: var(--dark);
+}
+.burger .bar::before, .burger .bar::after {
+    display: block;
+    content: "";
+    width: 22px;
+    height: 3px;
+    background: var(--dark);
+    position: absolute;
+}
+.burger .bar::before {
+    transform: translateY(-8px);
+}
+.burger .bar::after {
+    transform: translateY(8px);
+
+}
