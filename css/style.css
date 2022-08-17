@@ -903,7 +903,7 @@ footer .grid {
 }
 
 footer .grid__item p {
-  margin-bottom: 5vh;
+  margin-bottom: 4vh;
 }
 
 footer a {
@@ -947,10 +947,6 @@ footer p svg {
 }
 
 .footer__socials .twitter {
-  display: none;
-}
-
-.footer__socials .instagram {
   display: none;
 }
 
