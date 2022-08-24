@@ -107,10 +107,11 @@ header {
 /*####    Mobile                         #######*/
 /*##############################################*/
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 830px) {
 
     header {
         padding: 1rem;
+        padding-bottom: 0;
         .right {
             order:1;
         }
@@ -128,7 +129,7 @@ header {
         justify-content: center;
         align-items: center;
         position: fixed;
-        top:70px;
+        top:60px;
         right:110%;
         overflow: hidden;
         opacity: 0;

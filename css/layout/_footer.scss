@@ -1,42 +1,43 @@
+
 footer {
     background-color: #000;
     color: #EEE;
     text-align: center;
     font-size: 1.4rem;
-}
-footer .grid {
-    align-items: center;
-}
-    footer .grid__item {
-
-        p {
-            margin-bottom: 4vh;
+    .grid {
+        align-items: center;
+        .grid__item {
+            p {
+                margin: 0;
+                padding-bottom: 2rem;
+                font-size: 2.5rem;
+                transition: .4s;
+                &:hover {
+                    text-decoration: underline;
+                    transform: scale(1.1);
+                    
+                }
+                svg {
+                    height: 50px;
+                    padding-top: 31px;
+                }
+            }
         }
     }
-footer {
     a {
         color: #EEE;
     }
-    p {
-        margin: 0;
-        font-size: 2.5rem;
-        transition: .4s;
-        &:hover {
-            text-decoration: underline;
-            transform: scale(1.1);
-            
-        }
-    svg {
-        height: 50px;
-        padding-top: 31px;
-    }
-}
     
 } 
 .footer__socials {
     display: inline-flex;
     text-align: center;
     justify-content: center;
+    li {
+        padding: 2rem;
+        margin-bottom: 0;
+    }
+
     .facebook {
         display:none;
     }

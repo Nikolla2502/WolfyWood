@@ -1,5 +1,8 @@
 .portfolio {
     background-color: var(--light_10) ;
+    p {
+        color: var(--dark_10);
+    }
 }
 
 /*#################################*/
@@ -39,48 +42,42 @@
 /*######   Cartes         ########*/
 /*#################################*/
 
-.card {
-    background: var(--light);
-    text-align: center;
-    position: relative;
+.grid__item__portfolio {
+    width: 50%;
+    .card {
+        background: var(--light);
+        text-align: center;
+        position: relative;
+        box-shadow: 0 0 7px rgba(0,0,0,0.1);
+        border: solid 1px var(--light_10);
+        border-radius: 25px;
+        .card__image{
+            border-radius: 25px;
+            border-radius: 25px 25px 0 0;
+            max-width: 100%;
+            height: auto;
 
-    box-shadow: 0 0 7px rgba(0,0,0,0.1);
-    border: solid 1px var(--light_10);
-}
-.portfolio {
-    .card__inner {
-        padding: 2rem;
-        background-color: var(--light);
-        .link{
-            color:var(--dark_10);
-            &:hover {
-                color:var(--dark);
-                text-decoration: underline;
+        }
+        .card__inner {
+            padding: 2rem;
+            background-color: var(--light);
+            height: 6rem;
+            border-radius: 0 0 25px 25px;
+            .card__title {
+                font-size: 1.8rem;
+                font-weight: 500;
+                color:var(--dark_10);
+                &:hover {
+                    color:var(--dark);
+                    text-decoration: underline;
+                }
             }
         }
     }
-    p {
-        color: var(--dark_10);
-    }
 
 }
 
-.card__title {
-    margin: 0 0 1rem;
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-.card__image{
-    padding:2rem;
-    max-height: 50rem;
-    width: 50rem;
-    
-}
-.portfolio .card img {
-    height: 80%;
-    max-width: 100%;
 
-}
 
 
 /*#################################*/
