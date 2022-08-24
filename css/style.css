@@ -827,15 +827,37 @@ header .header_nav_lang_choice img:hover {
   border-radius: 0 0 25px 25px;
 }
 
-.grid__item__portfolio .card .card__inner .card__title {
+.grid__item__portfolio .card .card__inner h3 {
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--dark_10);
 }
 
-.grid__item__portfolio .card .card__inner .card__title:hover {
+.grid__item__portfolio .card .card__inner h3:hover {
   color: var(--dark);
-  text-decoration: underline;
+}
+
+.grid__item__portfolio .card .card__inner h3::after {
+  content: "";
+  display: block;
+  width: 30%;
+  margin: auto;
+  margin-top: 2px;
+  height: 3px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background: var(--dark_10);
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+}
+
+.grid__item__portfolio .card .card__inner h3:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 /*#################################*/

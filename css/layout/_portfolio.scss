@@ -63,15 +63,31 @@
             background-color: var(--light);
             height: 6rem;
             border-radius: 0 0 25px 25px;
-            .card__title {
+            h3 {
                 font-size: 1.8rem;
                 font-weight: 500;
                 color:var(--dark_10);
                 &:hover {
                     color:var(--dark);
-                    text-decoration: underline;
+                }
+                &::after {
+                content: "";
+                display: block;
+                // position: absolute;
+                width: 30%;
+                margin: auto;
+                margin-top: 2px;
+                height: 3px;
+                transform: scaleX(0);
+                transform-origin: center;
+                background: var(--dark_10);
+                transition: transform 0.4s ease-out;
+                }
+                &:hover::after {
+                    transform: scaleX(1);
                 }
             }
+
         }
     }
 
