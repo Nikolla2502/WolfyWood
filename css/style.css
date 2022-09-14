@@ -208,11 +208,6 @@ section {
 
 /* #################################### */
 /* toutes les images (seo)*/
-img {
-  max-width: 800px;
-  max-height: 600px;
-}
-
 @media screen and (min-width: 830px) {
   .burger {
     display: none;
